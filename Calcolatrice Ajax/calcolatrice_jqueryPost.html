@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script  src = " https://code.jquery.com/jquery-3.5.0.js " > </script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="calculator card">
+
+            <input type="text"  name="display" id="operazioni" readonly="readonly" class="calculator-screen z-depth-1" />
+        
+            <div class="calculator-keys">
+        
+              <button type="submit" id="+" onclick="n(this.id)"  class="operator btn btn-info" value="+">+</button>
+              <button type="submit" id="-" onclick="n(this.id)" class="operator btn btn-info" value="-">-</button>
+              <button type="submit" id="*" onclick="n(this.id)" class="operator btn btn-info" value="*">&times;</button>
+              <button type="submit" id="/" onclick="n(this.id)" class="operator btn btn-info" value="/">&divide;</button>
+        
+              <button type="submit" id="7" value="7"  onclick="n(this.id)" class="btn btn-light waves-effect">7</button>
+              <button type="submit" id="8" value="8" onclick="n(this.id)" class="btn btn-light waves-effect">8</button>
+              <button type="submit" id="9" value="9" onclick="n(this.id)" class="btn btn-light waves-effect">9</button>
+        
+        
+              <button type="submit" id="4" value="4" onclick="n(this.id)" class="btn btn-light waves-effect">4</button>
+              <button type="submit" id="5" value="5" onclick="n(this.id)" class="btn btn-light waves-effect">5</button>
+              <button type="submit" id="6" value="6" onclick="n(this.id)" class="btn btn-light waves-effect">6</button>
+        
+        
+              <button type="submit" id="1" value="1"  onclick="n(this.id)" class="btn btn-light waves-effect">1</button>
+              <button type="submit" id="2" value="2"  onclick="n(this.id)"  class="btn btn-light waves-effect">2</button>
+              <button type="submit" id="3" value="3"  onclick="n(this.id)" class="btn btn-light waves-effect">3</button>
+        
+        
+              <button type="submit" id="0" value="0"  onclick="n(this.id)" class="btn btn-light waves-effect">0</button>
+              <button type="submit"  id="." onclick="n(this.id)" class="decimal function btn btn-secondary" value=".">.</button>
+              <button type="submit"  onclick="cancella()" class="all-clear function btn btn-danger btn-sm" value="C"> C</button>
+        
+              <button type="submit"  onclick="operazione_jqueryPost()" class="equal-sign operator btn btn-default" value="=">=</button>
+        
+            </div>
+          </div>
+          <div>
+            <a type="button" href="calcolatrice_jsGet.html" class="btn btn-info"> calcolatrice_jsGet</a>
+            <a type="button" href="calcolatrice_jqueryGet.html" class="btn btn-info"> calcolatrice_jqueryGet</a>
+            <a type="button" href="calcolatrice_jsPost.html"class="btn btn-info">calcolatrice_jsPost</a>
+            <a type="button" href="calcolatrice_jqueryPost.html" class="btn btn-info">calcolatrice_jqueryPost</a>
+          </div>
+    </body>
+</html>
